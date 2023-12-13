@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> THE 7 DREAM</title>
+</head>
+<body>
+    <!-- HEADER -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+      </head>
+      <body>
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </body>
+    </html>
+    
+    <!--mulai navbar -->
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-0 bg-body-tertiary rounded ">
+      
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">THE 7 DREAM</a>
+        
+          <img src="https://img.freepik.com/free-vector/hand-drawn-y2k-logo-design_23-2150585059.jpg?size=626&ext=jpg&uid=R107988678&ga=GA1.1.1712123230.1664813855&semt=sph" alt="Logo" width="50" height="50" class="d-inline-block align-text-left">
+        </a>
+      </div>
+   
+        <div class="nav justify-content-end col-md-3 " style="font-family: 'Times New Roman'" >
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="catalog2.php">Catalog <span class="sr-only">(current)</span></a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="footer.php">Contact</a>
+            </li>
+          </ul>
+        </div>
+         
+        
+          <!--form login -->
+          <style>
+          body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #DED0B6;
+  color: white;
+  padding: 5px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+      </svg>
+    </div>
+
+    <div class="container" style="font-family: 'Times New Roman'">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container " style="background-color:#f1f1f1 shadow p-3 mb-0">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</nav>
+      </nav>
+
+<!--Background -->
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #FDF7E4;text-shadow: #000;"  >
+  <div class="container alignt-text-left">
+    <h1 style="font-family: 'Times New Roman'"> THE 7 DREAM</h1>
+    <hr/>
+    <img src="https://lenteramata.com/wp-content/uploads/2022/03/ide-nama-olshop-aksesoris-wanita.jpg" align="right" style="width: 380px;border-radius: 10px;">
+    <p class="h6 col-lg-4" >Toko The 7 Dream pertama didirikan di Purwokerto pada januari 2023, Toko The 7 Dream mengeluarkan produk aksesoris wanita berupa kalung, gelang, cincin,dan lainnya, sabuk, jam tangan, bando, jepit rambut, tali/pita rambut, topi, kacamata, dan lain sebagainya. 
+      Hingga sekarang Toko The 7 Dream sudah memproduksi banyak barang, tak hanya aksesoriswanita saja tetapi ada pula aksesoris pria yang kini ada di toko.</p>
+  
+    </div>
+    
+</div>
+    
+<div class="container text-center" id="Produk Unggulan">
+  <div class="row">
+      <div class="col">
+      <h1>Produk Unggulan</h1>
+  </div>
+</div>
+<div class="card-deck mt-5 ml-5 mr-5 ">
+  <div class="card shadow p-2 mb-0">
+    <img class="card-img-top" src="https://down-id.img.susercontent.com/file/sg-11134201-22100-t33bsxhbb5iv51" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Pearl Hairpin</h5>
+      <p class="card-text"> Jepit rambut seperti ini sangat diminati dan banyak yang memakai karena memang sangat cantik apabila dipakai.</p>
+      
+    </div>
+  </div>
+  <div class="card shadow p-2 mb-0">
+    <img class="card-img-top" src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-lop2ux9v5vu42f" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Beads Ring</h5>
+      <p class="card-text"> Beads ring sangat diminati juga sedang trending di sosial media dan memiliki design yang unik juga lucu.</p>
+     
+    </div>
+  </div>
+  <div class="card shadow p-2 mb-0">
+    <img class="card-img-top" src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lkq80vg03yia15" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Pendant Necklace</h5>
+      <p class="card-text"> Kebanyakan wanita lebih memilih kalung yang memiliki design yang simple, karena akan terlihat lebih elegan dan cocok di pakai pada acara formal ataupun non formal.</p>
+     
+    </div>
+  </div>
+</div>
+<div>
+  <div class="card-deck mt-5 ml-5 mr-5">
+    <div class="card shadow p-2 mb-0">
+      <img class="card-img-top" src="https://down-id.img.susercontent.com/file/id-11134207-7qul7-ljpl9s1xykqn66" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Baseball Cap</h5>
+        <p class="card-text"> Topi baseball banyak yang minat karena designya yang simple dan cocok di padukan dengan outfit apa saja, juga sangat di cari saat cuaca yang panas ini.
+        </p>
+        
+      </div>
+    </div>
+    <div class="card shadow p-2 mb-0">
+      <img class="card-img-top" src="https://down-id.img.susercontent.com/file/2758e64cca49cec2865737edbda417f3" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Couple Watch</h5>
+        <p class="card-text">Siapa yang gak gemes liat varian warna dari couple Watch ini. 
+          Siap bikin looks kamu auto keren! Karna ada banyak opsi warna yang bisa kamu cocokin dengan pasangan & karakter kamu.
+          </p>
+       
+      </div>
+    </div>
+    <div class="card shadow p-2 mb-0">
+      <img class="card-img-top" src="https://down-id.img.susercontent.com/file/id-11134207-23010-qeptwsb26umvee" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Sun Moon Necklace</h5>
+        <p class="card-text"> Design yang unik sangat menarik minat para kaum muda, khususnya laki-laki. Karena akan semakin menunjang pemanpilan dan akan terlihat semakin keren.</p>
+       
+      </div>
+    </div>
+</div>
+<hr/>
+ 
+<div class="jumbotron jumbotron-fluid" style="background-color: #FAEED1; text-shadow: #000;"  >
+  <div class="container alignt-text-Center">
+    <h4 style="font-family: 'Times New Roman'"> Biar ada kemajuan..</h4>
+    <p class=" container alignt-text-Center h6 col-lg-4" style="font-family: 'Times New Roman'">Boleh lah kasih kami kritik dan saranmu. Kritik dan saran sangat membantu kami.</p>
+    </div>
+    <div class="mb-3">
+      <label for="FormControlInput" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="FormControlInput" placeholder="@gmail.com">
+    </div>
+    <div class="mb-3">
+      <label for="FormControlTextarea" class="form-label">Kritik dan Saran</label>
+      <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
+    </div>
+    <hr/>
+    </div>
+
+<div class="text-left" id="Review" style="font-family: 'Times New Roman'">
+  <div class="row">
+      <div class="col">
+      <h4> Review</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Yovita</h5>
+        <p class="card-text">Jujur beda dari ekspektasi,kukira bakalan lebih kecil, ternyata agak gede liontinnya, tapi gapapa tetep lucu + bagus, pengirimannya cepet, packingnya rapih, kualitasnya lumayan bagus👍 thanks seller!!.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Syifa</h5>
+        <p class="card-text">Jepitan rambut nya suka bangeet sesuai pesanan🥰 pengiriman slalu cepat udh ke 2x nya pokoknya ga bkalan ngecewain 👍 terimakasih banyak🙏</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Michael</h5>
+        <p class="card-text">Bagus, simple, design nya elegant, keren, dikirim sesuai pesanan, pengiriman cepat, packing sangat aman.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Bagus</h5>
+        <p class="card-text">Barang datang sesuai dengan keinginan, pengemasan rapi, tidak ada yang rusak, barangnya lucu setelah di pakai pacar saya, pengiriman lumayan cepat.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 " >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dinda</h5>
+        <p class="card-text">Bagus, keren, pengiriman juga cepat, bahan bagus sepertinya awet, beli banyak buat dibagi karena murah tapi ga murahan.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Dinda</h5>
+        <p class="card-text">Sumpahhhh ini toko baguss bangattt woiiii
+          mana hargaanya muraahhh lagiiii🥲🫶🏻🫶🏻 pkoknya nggak nyesel order disinii bgusss woiii.</p>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div> </div>
+ <!-- Footer -->
+
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-2 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="" style="background-color: #FDF7E4; font-family: 'Times New Roman'"" >
+    <div class="container text-center text-md-start mt-0">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> THE 7 DREAM
+          </h6>
+          <p>
+            Distributor dan toko aksesoris terlengkap di Purwokerto dengan mengutamakan produk yang “BERKUALITAS, HARGA TERJANGKAU SERTA PELAYANAN YANG TERBAIK”
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-4 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Catalog</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">About Me</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-4 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Social Media
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Instagram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Facebook Page</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Youtube Channel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-4 mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Purwokerto, Banyumas, Jawa Tengah, Indonesia </p>
+          <p>
+            <i class="fas fa-envelope me-3"></i> the7dreamproject@gmail.com</p>
+          <p><i class="fas fa-print me-3"></i> +62 895 130 800</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <hr/>
+      <div class="text-center p-2 " style="background-color: #FDF7E4;">
+        <div >
+        <p><h6></h6> Ikuti Kami Di </p>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
+        </svg>
+        </div>
+      <div>        
+        <h6> © 2023 THE 7 DREAM</h6>
+        </div>
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+</>
+  <!-- Copyright -->
+ 
+  
+ 
+<!-- Footer -->
+</body>
+</html>
